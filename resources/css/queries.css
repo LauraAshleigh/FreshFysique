@@ -1,19 +1,13 @@
 /* Big tablet to 1200px (width smaller than 1140 row) */
 @media only screen and (max-width: 1200px){
     
+    .row{ padding: 0 2%; }
+    .navigation-container { padding-top: 20px; }
     .main-box{
         width: 100%;
         padding: 0 2%;
-    }
-    
-    .row{ padding: 0 2%; } 
-    
-    .nav-bar li{
-        margin-left: 20px;
-        font-size: 90%;
-    }
-    
-    .contacts-bar li{ font-size: 75%; }
+    } 
+
 }
     
     
@@ -23,30 +17,20 @@
     body{ font-size: 18px; }
     section{ padding: 60px 0; }
     .nav-bar li{ 
-        font-size: 80%;
-        margin-left: 10px;
+        font-size: 90%;
+        margin-left: 20px;
     }
-    .contacts-bar li{ font-size: 70%; }
-    .logo-top{ font-size: 130%; }
+    .contacts-bar { font-size: 90%; }
 
-    .logo-bottom{ font-size: 50%; }
     .long-copy{
         width: 80%;
         margin-left: 10%;
     }
-    .techniques-photo{ height: 260px; }
-    .for-you-box{ margin-top: 10px; }
-    .for-you-box:last-child{ margin-top: 10px; }
-    .for-you-list{ margin-bottom: 40px; }
-    .b-w-person{ 50%; }
-    .icon-small{ width:17px; }
-    .city-feature{ font-size: 90%; }
-    .price-box{
-        width: 100%;
-        margin-left: 0%;
-    }
-    .price{ 250%; }
-    .enquiry-form{ 80%; } 
+
+    .picture-gallery{ padding: 10px; }
+    .service-buttons .btn-full{ width: 160px; }
+    
+    footer .logo-container { width: 150px; }
 }
 
 /* Small phones to small tablets: from 481 to 767px */
@@ -57,128 +41,119 @@
     .row, .main-box{ padding: 0 4%; }
     .col { 
         margin: 0 0 4% 0%;
-        width: 100% }
-    
-    .nav-bar{ 
-        display:none;
-        float: left;
-        margin-top: 25px;
-        margin-left: 25px; 
+        width: 100% 
     }
     
+    h1{ font-size: 350% }
+    h2{ font-size: 150% }
+    h4{ margin-top: 50px; }
+    
+    header, .about, .testimonials{ background-attachment: scroll; }
+    .about{ 
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/plant-branch.jpg); 
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/plant-branch.jpg); 
+    }
+    
+    .navigation-container { 
+        padding: 10px 30px;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .logo-container{ 
+        width: 120px;
+        margin-top: 15px;
+    }
+    
+    .nav-bar{ display: none; }
     .contacts-bar{ display: none; }
-    
-    .mobile-nav-icon{ display: inline-block; }
-    
-    .nav-bar li { display: block; }
-    
-    .nav-bar li a:link,
-    .nav-bar li a:visited{
-        display: block;
-        border: 0;
-        padding: 10px 0;
-        font-size: 100%;
-    }
-    
-    .sticky .nav-bar{ margin-top: 10px; }
 
+    .mobile-nav-icon{ display: inline-block; }
+    .mobile-nav-bar{ display: none; }
+    
+    .sticky .logo-black{ margin-top: -15px; }
+    .sticky .nav-bar{ margin-top: 10px; }
     .sticky .nav-bar li a:link,
     .sticky .nav-bar li a:visited{ padding: 10px 0; }
     .sticky .mobile-nav-icon i { color: #5a5a5a; }
-    .sticky .mobile-nav-icon{ margin-top: 10px; }
     
-    .btn{ margin-bottom: 10px; }
+    .health-fund-rebates{ margin-top: 50px; }
+    .health-insurance{ 
+        padding: 0 4px;
+        font-size: 110%;
+        text-align: center;
+    }
     .long-copy{
         width: 100%;
         padding: 0 8px;
         margin-left: 0;
     }
-    .techniques-photo{ height: 200px; }
-    .for-you-box:first-child{ text-align: center; }
     
-    .for-you-box:last-child{
-        width: 60%;
-        margin-left: 20%;
-        margin-right: 20%;
+    .logo-box{ display: none; }
+    .image-box{ 
+        -ms-flex-preferred-size: 40%; 
+        flex-basis: 40%;
+        margin-right: 10px;
+        -ms-flex-item-align: center;
+        align-self: center;
+    }
+    .text-box{ -ms-flex-preferred-size: 60%; flex-basis: 60%; }
+    .text-box p{ 
+        font-size: 100%;
+        margin: 20px 0;
     }
     
-    .for-you-box .btn{ 
-        width: 60%;
-        margin-left: 20%;
-        margin-right: 20%;
+    .picture-gallery{ display: none; }
+    .service-buttons{ margin-top: 50px; }
+    .service-buttons .btn-full{ width: 145px; }
+    
+    
+    blockquote{ 
+        margin-top: 0;
+        font-size: 110%;
     }
     
-    .price-box{
-        width: 40%;
-        margin-left: 30%;
-        margin-right: 30%;
+    footer{ 
+        font-size: 100%;
+        text-align: center;
     }
-    
-    .price{
-        font-size: 250%;
-        margin-top: 50px;
-        padding-bottom: 50px;
+    .footer-logo, .address, .contact { 
+        padding: 25px;
+        margin-bottom: 0;
     }
-    
-    .price-label{
-        font-size: 125%;
-        margin-top: 15px;
-        margin-bottom: 15px;
+    .footer-contact{ margin: 0; }
+    .footer-buttons{ 
+        -webkit-box-pack: center;
+        -ms-flex-pack: center; 
+        justify-content: center; 
     }
-    
-    h1{ font-size: 180% }
-    h2{ font-size: 150% }
-    .fresh-fysique-for-you h2{ text-align: center; }
-    
-    .about-box:first-child{
-    text-align: center;
-    }
-    
+    #fresh-fysique{ display: none; }
+
 }
 
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 480px){
     
     section{ padding: 25px 0; }
-    .nav-bar{ display:none; }
-    .long-copy{ padding: 0 4px; }
-    .techniques-photo{ height: 150px; }
-    .techniques-description p{ font-size: 70%; }
-    h4{ font-size: 80%; }
-    .for-you-box:first-child{ text-align: center; }
-    
-    .for-you-box:last-child{
-        width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
+    h1{ font-size: 300% }
+    h2{ font-size: 130% }
+    .long-copy{ 
+        padding: 0 4px;
+        font-size: 110%;
     }
     
-    .for-you-list{ font-size: 90%; }
+    .mobile-nav-bar{ margin-right: 30px; }
     
-    .for-you-box .btn{
-        width: 60%;
-        margin-left: 20%;
-        margin-right: 20%;
+    .image-box{ display: none; }
+    .text-box{ 
+        -ms-flex-preferred-size: 100%; 
+        flex-basis: 100%; 
     }
     
-    .price-box{
-        width: 70%;
-        margin-left: 15%;
-        margin-right: 15%;
+    .health-insurance{ 
+        padding: 0 4px;
+        font-size: 110%; 
+        text-align: center;
     }
     
-    .price{
-        font-size: 250%;
-        margin-top: 50px;
-        padding-bottom: 50px;
-    }
-    
-    .price-label{
-        font-size: 125%;
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-
-    .enquiry-form{ width: 100%; }
-
 }
