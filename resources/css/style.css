@@ -569,6 +569,16 @@ cite{
     line-height: 145%;
 }
 
+.map-wrapper { text-align: center; }
+
+.map { border: solid 2px #19ac90; }
+
+.map:link,
+.map:visited{ border: solid 2px #19ac90; }
+
+.map:hover,
+.map:active{ border: solid 2px #0e6252; }
+
 .contact-detail { margin-bottom: 5px; }
 
 .contact-detail a{
