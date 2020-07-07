@@ -159,6 +159,8 @@ btn-book:active{
     color: #fff;
 }
 
+.btn-margin { margin-right: 15px; }
+
 /* Icons */
 
 .icon-social{
@@ -514,8 +516,6 @@ header{
     -ms-flex-pack: center;
     justify-content: center;
 }
-
-#myo-btn{ margin-right: 15px; }
 
 .service-buttons .btn-full{ width: 168px; }
 
